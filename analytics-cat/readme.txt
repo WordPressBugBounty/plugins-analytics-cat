@@ -8,7 +8,7 @@ Requires at least: 4.0
 Tested up to: 6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 
 Analytics Cat - Google Analytics Lets You Add Your Google Analytics / Universal Analytics Tracking Code To Your Site With Ease.
 
@@ -126,6 +126,8 @@ Our full privacy policy is available here: [https://fatcatapps.com/legal/privacy
 
 == Changelog ==
 
+= Analytics Cat - Google Analytics 1.1.3 =
+* Fix possible XSS vectors reported
 
 = Analytics Cat - Google Analytics 1.1.2 =
 * Added notices re: Google Analytics 3 deprecation (please use our other plugin, Pixel Cat for GA4 support)

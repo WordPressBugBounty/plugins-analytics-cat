@@ -61,9 +61,9 @@ function fca_ga_admin_review_notice() {
 	if( $show_review_option  ) {
 
 		$nonce = wp_create_nonce( 'fca_ga_leave_review' );
-		$review_url = add_query_arg( array( 'fca_ga_review_notice' => 'review', 'fca_ga_nonce' => $nonce ) );
-		$postpone_url = add_query_arg( array( 'fca_ga_review_notice' => 'later', 'fca_ga_nonce' => $nonce ) );
-		$forever_dismiss_url = add_query_arg( array( 'fca_ga_review_notice' => 'dismiss', 'fca_ga_nonce' => $nonce ) );
+		$review_url = esc_url( add_query_arg( array( 'fca_ga_review_notice' => 'review', 'fca_ga_nonce' => $nonce ) ) );
+		$postpone_url = esc_url( add_query_arg( array( 'fca_ga_review_notice' => 'later', 'fca_ga_nonce' => $nonce ) ) );
+		$forever_dismiss_url = esc_url( add_query_arg( array( 'fca_ga_review_notice' => 'dismiss', 'fca_ga_nonce' => $nonce ) ) );
 
 		echo '<div id="fca-ga-review-notice" class="notice notice-success is-dismissible" style="padding-bottom: 8px; padding-top: 8px;">';
 		
@@ -122,8 +122,8 @@ function fca_ga_admin_ga4_notice() {
 	if( $show_ga4_option  ) {
 
 		$nonce = wp_create_nonce( 'fca_ga_dismiss_ga4' );
-		$postpone_url = add_query_arg( array( 'fca_ga_ga4_notice' => 'later', 'fca_ga_nonce' => $nonce ) );
-		$forever_dismiss_url = add_query_arg( array( 'fca_ga_ga4_notice' => 'dismiss', 'fca_ga_nonce' => $nonce ) );
+		$postpone_url = esc_url( add_query_arg( array( 'fca_ga_ga4_notice' => 'later', 'fca_ga_nonce' => $nonce ) ) );
+		$forever_dismiss_url = esc_url( add_query_arg( array( 'fca_ga_ga4_notice' => 'dismiss', 'fca_ga_nonce' => $nonce ) ) );
 		
 		echo '<div id="fca-ga-ga4-notice" class="notice notice-success is-dismissible" style="padding-bottom: 8px; padding-top: 8px;">';
 			echo '<img style="float:left; margin-right: 16px;" height="120" width="120" src="' . FCA_GA_PLUGINS_URL . '/assets/googlecat_icon128_128_360.png' . '">';

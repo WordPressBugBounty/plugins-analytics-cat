@@ -8,7 +8,7 @@
 	Author: Fatcat Apps
 	Author URI: https://fatcatapps.com/
 	License: GPLv2
-	Version: 1.1.2
+	Version: 1.1.3
 */
 
 
@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) or die( 'Unauthorized Access!' );
 if ( !defined('FCA_GA_PLUGIN_DIR') ) {
 	
 	//DEFINE SOME USEFUL CONSTANTS
-	define( 'FCA_GA_PLUGIN_VER', '1.1.2' );
+	define( 'FCA_GA_PLUGIN_VER', '1.1.3' );
 	define( 'FCA_GA_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'FCA_GA_PLUGINS_URL', plugins_url( '', __FILE__ ) );
 	define( 'FCA_GA_PLUGINS_BASENAME', plugin_basename(__FILE__) );
